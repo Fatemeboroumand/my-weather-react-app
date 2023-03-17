@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Weather from './Weather.js';
 import './App.css';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Weather />
       <footer>
-      This project was coded by Fateme Boroumand and is <a href=''>open-sourced on GitHub</a> and hosted on Netlify
+      This project was coded by Fateme Boroumand and is <a href='https://github.com/Fatemeboroumand/my-weather-react-app'>open-sourced on GitHub</a> and hosted on <a href=''>Netlify</a>
       </footer>
     </div>
   );
