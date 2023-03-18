@@ -58,7 +58,7 @@ function handleSubmit(event) {
             <div className="row">
                 <div className="col-6">
                   <div className="clearfix"  >
-                    <img src={weatherData.img} className="float-left"/> 
+                    <img src={weatherData.img} alt="icon" className="float-left"/> 
                     
     <TemperatureUnit celsius={Math.round(weatherData.temp)}/>
                     </div>

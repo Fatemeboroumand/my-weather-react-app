@@ -15,13 +15,13 @@ export default function TemperatureUnit(props) {
 if (unit === "celsius") {
     return (
         <div>
-         <span className="temperature float-left">{props.celsius}</span><span className="unit"><a>°C</a> | <a onClick={showFaren}>°F</a></span>
+         <span className="temperature float-left">{props.celsius}</span><span className="unit">°C | <a href="#" onClick={showFaren}>°F</a></span>
 
         </div>
     )} else {
         return(
             <div>
-         <span className="temperature float-left">{Math.round((props.celsius * 5/9) + 32)}</span><span className="unit"><a onClick={showCelsius}>°C</a> | <a onClick={showFaren}>°F</a></span>
+         <span className="temperature float-left">{Math.round((props.celsius * 5/9) + 32)}</span><span className="unit"><a href="#" onClick={showCelsius}>°C</a> | °F</span>
 
             </div>
         )
