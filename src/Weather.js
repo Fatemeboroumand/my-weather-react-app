@@ -56,7 +56,7 @@ function handleSubmit(event) {
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img src={weatherData.img}/> <span>{Math.round(weatherData.temp)}</span><span>C</span>
+                    <img src={weatherData.img}/> <span className="temperature">{Math.round(weatherData.temp)}</span><span className="unit">C</span>
                 </div>
                 <div className="col-6">
                     <ul>
