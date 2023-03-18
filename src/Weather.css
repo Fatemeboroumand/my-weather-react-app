@@ -1,3 +1,13 @@
 .Weather {
     border: 1px solid gray;
 }
+
+.Weather ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.Weather li {
+    margin: 0;
+}
