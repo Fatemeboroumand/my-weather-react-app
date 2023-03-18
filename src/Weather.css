@@ -55,3 +55,11 @@
     line-height: 1;
     top: -34px;
   }
+
+
+  button {
+    border: none;
+    background-color: white;
+    padding: 0;
+    color: blue;
+  }
