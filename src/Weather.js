@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Weather.css'
 import axios from 'axios';
 import ShowTime from "./ShowTime"
+import TemperatureUnit from "./TemperatureUnit"
 
 export default function Weather(props) {
 const [weatherData, setWeatherData] = useState({ready: false});
@@ -49,14 +50,18 @@ function handleSubmit(event) {
                     </div>
                 </div>
             </form>
-            <h1>{city}</h1>
+            <h1>{weatherData.city}</h1>
             <ul>
                 <li><ShowTime currentDate={weatherData.date}/></li>
                 <li>{weatherData.description}</li>
             </ul>
             <div className="row">
                 <div className="col-6">
-                    <img src={weatherData.img}/> <span className="temperature">{Math.round(weatherData.temp)}</span><span className="unit">C</span>
+                  <div className="clearfix"  >
+                    <img src={weatherData.img} className="float-left"/> 
+                    
+    <TemperatureUnit celsius={Math.round(weatherData.temp)}/>
+                    </div>
                 </div>
                 <div className="col-6">
                     <ul>

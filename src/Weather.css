@@ -33,12 +33,19 @@
     font-weight: bold;
     color: rgb(33, 33, 33);
     font-size: 64px;
-    line-height: 64px;
+    line-height: 2;
     margin-left: 5px;
     font-weight: 400;
     margin-left: 10px;
+
+    
   }
 
+  .Weather img {
+    line-height: 64px;
+    float: left;
+    margin: 10px auto;
+  }
   
 .Weather .unit {
     color: rgb(33, 33, 33);
