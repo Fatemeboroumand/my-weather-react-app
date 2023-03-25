@@ -3,6 +3,7 @@ import './Weather.css'
 import axios from 'axios';
 import ShowTime from "./ShowTime"
 import TemperatureUnit from "./TemperatureUnit"
+import DayForcast from "./DayForcast.js"
 
 export default function Weather(props) {
 const [weatherData, setWeatherData] = useState({ready: false});
@@ -71,6 +72,7 @@ function handleSubmit(event) {
                 </div>
             </div>
         </div>
+        <DayForcast city={weatherData.city}/>
     </div>)} else {
     let key = `fc27d3cat0oef346a51ba4fd0ca6ded3`
     let url = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${key}`
