@@ -27,7 +27,7 @@ export default function DayForcast(props) {
                     return(
           <div className="col" key={index}>
         <ForecasParts data={dailyForcast}/>
-          </div> );}
+          </div> );} else {return null}
     })}
         </div>
       </div>
